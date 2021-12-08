@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contrast Checker by GabeVilela</title>
+</head>
+
+<body>
+    <div class="grid_container">
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <td colspan="4">Results</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Background with Foreground
+                    </td>
+                    <td class="colorCube bg">
+                    </td>
+                    <td class="colorCube fg"></td>
+                    <td>
+                        <span id="r_bg_fg"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Background with Selection
+                    </td>
+                    <td class="colorCube bg">
+                    </td>
+                    <td class="colorCube hl"></td>
+                    <td>
+                        <span id="r_bg_hl"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Background with Accent
+                    </td>
+                    <td class="colorCube bg">
+                    </td>
+                    <td class="colorCube ac"></td>
+                    <td>
+                        <span id="r_bg_ac"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Foreground with Selection
+                    </td>
+                    <td class="colorCube fg">
+                    </td>
+                    <td class="colorCube hl"></td>
+                    <td>
+                        <span id="r_fg_hl"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Accent with Selection
+                    </td>
+                    <td class="colorCube ac">
+                    </td>
+                    <td class="colorCube hl"></td>
+                    <td>
+                        <span id="r_hl_ac"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="color_group bg" id="cg_bg">
+            <span id="t_bg">Background</span>
+            <input type="color" id="cp_bg" value="#2E2E2E">
+            <input type="text" id="hex_bg">
+            <input type="number" min="-100" max="100" step="1" value="0" id="nm_bg">
+            <input type="hidden" id="ogc_bg">
+        </div>
+        <div class="color_group fg" id="cg_fg">
+            <span id="t_fg">Foreground</span>
+            <input type="color" id="cp_fg" value="#cdc8c0">
+            <input type="text" id="hex_fg">
+            <input type="number" min="-100" max="100" step="1" value="0" id="nm_fg">
+            <input type="hidden" id="ogc_fg">
+        </div>
+        <div class="color_group hl" id="cg_hl">
+            <span id="t_hl">Selection</span>
+            <input type="color" id="cp_hl" value="#7795ff">
+            <input type="text" id="hex_hl">
+            <input type="number" min="-100" max="100" step="1" value="0" id="nm_hl">
+            <input type="hidden" id="ogc_hl">
+        </div>
+        <div class="color_group ac" id="cg_ac">
+            <span id="t_ac">Accent</span>
+            <input type="color" id="cp_ac" value="#555555">
+            <input type="text" id="hex_ac">
+            <input type="number" min="-100" max="100" step="1" value="0" id="nm_ac">
+            <input type="hidden" id="ogc_ac">
+        </div>
+        <span class="rl bg"></span>
+        <span class="rl fg"></span>
+        <span class="rl hl"></span>
+        <span class="rl ac"></span>
+    </div>
+</body>
+
+<script src="jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
